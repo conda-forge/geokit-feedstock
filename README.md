@@ -1,11 +1,11 @@
-About geokit
-============
+About geokit-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/geokit-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/FZJ-IEK3-VSA/geokit
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/geokit-feedstock/blob/main/LICENSE.txt)
 
 Summary: GeoKit is a general purpose GIS toolkit wich is particulary usefull for conducting land eligibility analysis.
 
@@ -144,4 +144,5 @@ Feedstock Maintainers
 =====================
 
 * [@julian-belina](https://github.com/julian-belina/)
+* [@shitabishmam](https://github.com/shitabishmam/)
 
