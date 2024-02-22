@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/FZJ-IEK3-VSA/geokit/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: fef633f54864bbf1e69680aeaac0b12501fceb0a4d946de605554b32480228ae
+  sha256: c848bf6bda93a36d496a95513ebdd55d51b910f22cd3986d620de684f8ab8d97
 
 build:
   number: 1
