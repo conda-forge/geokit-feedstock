@@ -1,5 +1,6 @@
 {% set name = "geokit" %}
 {% set version = "1.4.0" %}
+{% set python_min = "3.9" %}
 
 package:
   name: {{ name|lower }}
@@ -10,7 +11,7 @@ source:
   sha256: c848bf6bda93a36d496a95513ebdd55d51b910f22cd3986d620de684f8ab8d97
 
 build:
-  number: 1
+  number: 2
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -18,10 +19,11 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.0
+    - python {{ python_min }}
     - setuptools-git
+    - setuptools
   run:
-    - python >=3.0
+    - python >={{ python_min }}
     - pytest
     - pytest-cov
     - pylint
@@ -50,6 +52,7 @@ test:
 
   requires:
     - pytest
+    - python {{ python_min }}
   commands:
     - pytest geokit/test/
 
