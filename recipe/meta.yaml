@@ -58,7 +58,7 @@ test:
     - pytest
     - python {{ python_min }}
   commands:
-    - pytest geokit/test/
+    - pytest -n auto
 
 about:
   home: https://github.com/FZJ-IEK3-VSA/geokit
