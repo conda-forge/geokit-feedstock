@@ -148,6 +148,3 @@ Feedstock Maintainers
 * [@phil-fzj](https://github.com/phil-fzj/)
 * [@shitabishmam](https://github.com/shitabishmam/)
 
-
-<!-- dummy commit to enable rerendering -->
-
