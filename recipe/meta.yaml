@@ -1,6 +1,9 @@
 {% set name = "geokit" %}
 {% set version = "1.4.2" %}
 {% set python_min = "3.9" %}
+{% set python_max = "<=3.10.13 " %}
+
+
 
 package:
   name: {{ name|lower }}
@@ -23,7 +26,7 @@ requirements:
     - setuptools-git
     - setuptools
   run:
-    - python >={{ python_min }}
+    - python >={{ python_min }},<={{ python_max }}
     - pytest
     - pytest-cov
     - pylint
@@ -32,15 +35,15 @@ requirements:
     - notebook
     - jupyterlab
     - pip
-    - matplotlib
+    - matplotlib <=3.9.1
     - descartes
-    - pandas
+    - pandas <=2.3
     - numpy <1.24
-    - scipy
+    - scipy <=1.15.2 
     - scikit-learn
     - gdal >=3.4.2,<=3.4.3
-    - smopy
-    - geopandas
+    - smopy <=0.0.8 
+    - geopandas <=0.14.4 
 
 test:
   imports:
