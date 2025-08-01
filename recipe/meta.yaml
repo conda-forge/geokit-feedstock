@@ -1,6 +1,7 @@
 {% set name = "geokit" %}
-{% set version = "1.5.0" %}
+{% set version = "1.4.1" %}
 {% set python_min = "3.9" %}
+{% set python_max = "3.10.13" %}
 
 package:
   name: {{ name|lower }}
@@ -13,34 +14,28 @@ source:
 build:
   number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps
 
 
 requirements:
   host:
     - pip
     - python {{ python_min }}
-    - setuptools-git
     - setuptools
   run:
-    - python >={{ python_min }}
-    - pytest
-    - pytest-cov
-    - pylint
-    - autopep8
-    - jupyter
-    - notebook
-    - jupyterlab
-    - pip
-    - matplotlib
-    - descartes
-    - pandas
-    - numpy <1.24
-    - scipy
-    - scikit-learn
+    - python >={{ python_min }},<={{ python_max }}
+    - matplotlib <=3.9.1
+    - pandas <=2.3.1
+    - numpy <=1.26.4
+    - descartes <=1.1.0
+    - scipy <=1.15.2
+    - scikit-learn <=1.7.1
     - gdal >=3.4.2,<=3.4.3
-    - smopy
-    - geopandas
+    - smopy <=0.0.8
+    - geopandas <=0.14.4
+    - pooch <=1.8.2
+    - structlog <=25.4.0
+    - rich <=14.1.0
 
 test:
   imports:
@@ -50,12 +45,11 @@ test:
     - osgeo
   source_files:
     - .
-
   requires:
-    - pytest
+    - pytest-xdist
     - python {{ python_min }}
   commands:
-    - pytest geokit/test/
+    - pytest -n auto
 
 about:
   home: https://github.com/FZJ-IEK3-VSA/geokit
