@@ -1,5 +1,5 @@
 {% set name = "geokit" %}
-{% set version = "1.5.0" %}
+{% set version = "1.6.0" %}
 {% set python_min = "3.10" %}
 {% set python_max = "3.10.13" %}
 
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://github.com/FZJ-IEK3-VSA/geokit/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 31a3416e74c3db4c34c4d51b4ddc3f62877e12c16deb18741d3b375786b2c5a6
+  sha256: d0241c9b57b676c7284afc8079506dd7d6f58d6797e4831041fb2f34c008b62d
 
 build:
   number: 0
