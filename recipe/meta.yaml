@@ -41,6 +41,7 @@ requirements:
     - pandas-stubs <=2.3.3
     - scipy-stubs <=1.17.0.2
     - requests <=2.32.5
+    - typeguard <=4.4.4
 
 test:
   imports:
