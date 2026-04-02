@@ -7,17 +7,16 @@ Home: https://github.com/FZJ-IEK3-VSA/geokit
 
 Package license: MIT
 
-Summary: GeoKit is a general purpose GIS toolkit wich is particulary usefull for conducting land eligibility analysis.
+Summary: Geokit is a library that interfaces with GDAL to support general-purpose geospatial data analysis.
 
 Current build status
 ====================
 
 
-<table><tr><td>All platforms:</td>
+<table><tr>
+    <td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=16021&branchName=main">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/geokit-feedstock?branchName=main">
-      </a>
+      <img src="https://img.shields.io/badge/noarch-disabled-lightgrey.svg" alt="noarch disabled">
     </td>
   </tr>
 </table>
